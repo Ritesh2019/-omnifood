@@ -1,0 +1,526 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    background-color: #fff;
+    font-family: "Lato","Arial",sans-serif;
+    font-size: 20px;
+    font-weight: 300;
+    color: #333333;
+    text-rendering: optimizeLegibility;
+}
+.row {
+    max-width: 1140px;
+    margin: 0 auto;
+}
+
+header {
+    background-image:linear-gradient(rgba(0, 0, 0, 0.7),rgba(0, 0, 0, 0.7)), url(img/hero.jpg);
+    height: 100vh;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;    
+}
+
+.header-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 1140px;
+    transform: translate(-50%,-50%);
+}
+
+h1,h2,h3 {
+    text-transform: uppercase;
+    font-weight: 300;
+    
+}
+
+h1 {
+    margin-top: 0;
+    margin-bottom: 10px;
+    color: #fff;
+    font-size: 240%;
+    word-spacing: 5px;
+    letter-spacing: 2px;
+}
+
+h2 {
+    font-size: 180%;
+    word-spacing: 3px;
+    color: #d27803;
+    text-align: center;
+    margin-bottom: 30px;
+    letter-spacing: 2px;
+}
+
+h2:after {
+    height: 2px;
+    background-color: #d27803;
+    display: block;
+    content: "";
+    width: 100px;
+    margin: 0 auto;
+    margin-top: 30px;
+}
+
+h3 {
+    letter-spacing: 1px;
+    font-size: 110%;
+    margin-bottom: 7px;
+}
+
+a:link,
+a:visited {
+    text-decoration: none;
+    color: #d27803;
+    border-bottom: 1px solid #d27803;
+    padding-bottom: 1px;
+    transition: color 0.2s, border-bottom 0.2s;
+}
+
+a:hover,
+a:active {
+    border-bottom: 1px solid transparent;
+    color: #333333;
+}
+.btn:link,
+.btn:visited,
+input[type="submit"] {
+    display: inline-block;
+    padding: 10px 30px;
+    border-radius: 100px;
+    text-decoration: none;
+    transition: background-color 0.2s, color 0.2s, border 0.2s ;
+}
+
+.btn-full:link,
+.btn-full:visited,
+input[type="submit"] {
+    background-color: #d27803;
+    margin-right: 10px;
+    color: #fff;
+    border: 1px solid #d27803;
+}
+
+.btn-border:link,
+.btn-border:visited {
+    border: 1px solid #d27803;
+    color: #d27803;
+}
+
+.btn:hover,
+.btn:active,
+input[type="submit"]:hover,
+input[type="submit"]:active {
+    background-color: #945400;
+}
+
+.btn-full:hover,
+.btn-full:active
+ {
+    border: 1px solid #945400;
+}
+
+.btn-border:hover,
+.btn-border:active {
+    border: 1px solid #945400;
+    color: #fff;
+}
+
+.logo-white {
+    height: 100px;
+    width: auto;
+    float: left;
+    margin-top: 7px;
+}
+
+.logo-black {
+    display: none;
+    height: 50px;
+    width: auto;
+    float: left;
+    margin-top: 5px;
+}
+
+.main-nav {
+    float: right;
+    list-style: none;
+    margin-top: 40px;
+}
+
+.main-nav li {
+    display: inline-block;
+    margin-left: 40px;
+}
+
+.main-nav li a:link,
+.main-nav li a:visited {
+    text-decoration: none;
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 90%;
+    padding: 8px 0;
+    border-bottom: 2px solid transparent;
+    transition: border-bottom 0.2s;
+}
+
+.main-nav li a:hover,
+.main-nav li a:active {
+    border-bottom: 2px solid #d27803;
+}
+
+section {
+    padding: 80px 0;
+}
+
+.feature-text {
+    width: 70%;
+    margin-left: 15%;
+    line-height: 145%;
+}
+
+.box {
+    padding: 1%;
+}
+
+.box p {
+    font-size: 90%;
+    text-align: justify;
+    line-height: 145%;
+}
+
+.icon-big {
+    color: #d27803;
+    font-size: 300%;
+    margin-bottom: 10px;
+    display: block;
+}
+
+.section-meals {
+    padding: 0;
+}
+.meal-showcase {
+    list-style: none;
+    width: 100%;
+}
+
+.meal-showcase li {
+    width: 25%;
+    float: left;
+}
+
+.meal-photo {
+    width: 100%;
+    margin: 0;
+    overflow: hidden;
+    background-color: #000;
+}
+
+.meal-photo img {
+    width: 100%;
+    height: auto;
+    transform: scale(1.15);
+    transition: transform 0.5s, opacity 0.5s;
+    opacity: .7;
+}
+
+.meal-photo img:hover {
+    transform: scale(1.04);
+    opacity: 1;
+}
+
+.section-steps {
+    background-color: #f3f3f3;
+}
+.iphone-image{
+    width: 40%;
+}
+
+.icon-img {
+    height: 50px;
+    width: auto;
+}
+
+.work-steps:first-child {
+    text-align: right;
+    padding-right: 3%;
+    margin-top: 40px;
+}
+
+.work-steps:last-child {
+    padding-left: 3%;
+    margin-top: 60px;
+}
+
+.step-box {
+    margin-bottom: 40px;
+}
+
+.step-box:last-of-type {
+    margin-bottom: 100px;
+}
+
+.step-box div {
+    border: 1px solid #d27803;
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    text-align: center;
+    padding: 5px;
+    font-size: 125%;
+    color: #d27803;
+    float: left;
+    margin-right: 10px;
+}
+
+.clearfix{ zoom: 1}
+
+.clearfix::after {
+    content: ".";
+    display: block;
+    clear: both;
+    height: 0;
+    visibility: hidden;
+}
+
+.box img {
+    width: 100%;
+    height: auto;
+}
+
+.city-features {
+    margin-bottom: 5px;
+}
+
+.icon-small {
+    color: #d27803;
+    font-size: 120%;
+    display: inline-block;
+    margin-right: 5px;
+    width: 30px;
+    vertical-align: middle;
+}
+
+.section-testimonials {
+    background-image:linear-gradient(rgba(0, 0, 0, 0.7),rgba(0, 0, 0, 0.7)), url(img/back-customers.jpg);
+    background-size: cover;
+    color: #fff;
+    background-attachment: fixed;
+}
+
+blockquote {
+    font-style: italic;
+    line-height: 145%;
+    padding: 2%;
+    text-align: justify;
+    font-weight: 400;
+    position: relative;
+}
+
+blockquote:before {
+    content: "\201C";
+    font-size: 450%;
+    display: block;
+    position: absolute;
+    top: 5px;
+    left: -7px;
+}
+cite {
+    display: block;
+    font-size: 90%;
+    margin-top: 10px;
+
+}
+cite img {
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    vertical-align: middle;
+    margin-right: 5px;
+}
+
+.section-plans {
+    background-color: #f3f3f3;   
+}
+
+.plans {
+    background-color: #fff;
+    border-radius: 10px;
+    width: 90%;
+    margin-left: 5%;
+    box-shadow: 10px 10px 10px #9a9a9a;
+}
+
+.plans div {
+    padding: 15px;
+    border-bottom: 1px solid #d2d2d2;
+}
+
+.meal-month {
+    font-size: 300%;
+    color: #d27803;
+    font-weight: 100;
+    margin-bottom: 7px;
+}
+
+.meal-month span {
+    font-size: 30%;
+    font-weight: 300;
+}
+
+.meal-daily {
+    font-size: 90%;
+}
+
+.plans ul {
+    list-style: none;
+}
+
+.plans ul li {
+    padding: 5px;
+}
+
+.plans div:last-child {
+    text-align: center;
+    border: 0;
+}
+
+.contact-form {
+    width: 60%;
+    margin: 0 auto;
+}
+
+input[type="text"],
+input[type="email"],
+select,
+textarea {
+    width: 100%;
+    padding: 7px;
+    border-radius: 8px;
+    border: 1px solid #a8a8a8;
+}
+
+textarea {
+    height: 100px;
+}
+
+*:focus{
+    outline: none;
+}
+
+footer {
+    background-color: #232323;
+    padding: 30px;
+}
+
+.footer-navs{
+    list-style: none;
+    float: left;
+}
+
+.social-navs{
+    list-style: none;
+    float: right;
+}
+
+.footer-navs li,
+.social-navs li {
+    display: inline-block;
+    margin-right: 20px;
+}
+
+.footer-navs li a:link,
+.footer-navs li a:visited,
+.social-navs li a:link,
+.social-navs li a:visited{
+    text-decoration: none;
+    color: #6a6a6a;
+    border: 0;
+}
+
+.footer-navs li a:hover,
+.footer-navs li a:active{
+    color: #eaeaea;
+}
+
+.ion-social-facebook,
+.ion-social-twitter,
+.ion-social-googleplus,
+.ion-social-instagram {
+    font-size: 150%;
+}
+
+.ion-social-facebook:hover,
+.ion-social-facebook:active {
+    color: #316FF6;
+}
+
+.ion-social-twitter:hover,
+.ion-social-twitter:active {
+    color: #1DA1F2;
+}
+
+.ion-social-googleplus:hover,
+.ion-social-googleplus:active {
+    color: #db4a39;
+}
+
+.ion-social-instagram:hover,
+.ion-social-instagram:active {
+    color: #E1306C;
+}
+
+footer p {
+    color: #6a6a6a;
+    text-align: center;
+    margin-top: 7px;
+}
+
+.sticky {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.97);
+    z-index: 9999;
+    box-shadow: 1px 1px 1px #dddddd;
+}
+
+.sticky .logo-black {
+    display: block;
+    margin: 5px 0;
+}
+
+.sticky .logo-white {
+    display: none;
+}
+
+.sticky .main-nav {
+    margin-top: 10px;
+}
+.sticky .main-nav li a:link,
+.sticky .main-nav li a:visited{
+    color: #333333;
+    padding: 21px 0;
+}
+
+.js--wp-1,
+.js--wp-2,
+.js--wp-3 {
+    opacity: 0;
+    animation-duration: 1s;
+}
+
+.js--wp-4 {
+    animation-duration: 1s;
+}
+
+.js--wp-1.animated,
+.js--wp-2.animated,
+.js--wp-3.animated {
+    opacity: 1;
+}
